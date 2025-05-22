@@ -47,6 +47,7 @@
   height: 20%;
 }
 
+/* nav container start */
 .nav_content {
   display: flex;
   gap: 1rem;
@@ -56,8 +57,91 @@
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
+.navlist:hover{
+  color:black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  
+}
+.navlist:focus{
+  color:orangered;
+}
+.menu_container {
+  display: none;
+}
+
+.menu_icon {
+  display: none;
+}
+
+@media screen and (max-width:576px) {
+  .nav_content {
+    display: none;
+  }
+
+  .company_logo {
+    width: 8rem;
+    height: 5rem;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .menu_container {
+    display: block;
+    background-color: rgb(237, 99, 19);
+    width: 50%;
+    height:100%;
+    position: fixed;
+    top: 0%;
+    right: -100%;
+    z-index: 1;
+
+  }
+  .close_button{
+    font-size: 2.5rem;
+    position:absolute;
+    color:white;
+    left:90%;
+    
+    
+  }
+  .menu_icon {
+    display: block;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .menu_list {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .menu_list_navigation {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu_list_cont {
+    /* background-color: rgb(133, 133, 231); */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+
+/* nav container start */
 .contact_button {
   padding: 0.5rem 2rem;
   background-color: orange;
@@ -318,6 +402,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content: space-between;
 }
 
 .footer_right {
@@ -327,6 +412,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content: space-between;
 }
 
 .footer_heading {
@@ -340,6 +426,7 @@
 
 .footer_button_container {
   padding: 1rem 0;
+
 }
 
 .footer_button {
@@ -348,6 +435,8 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
+  /* margin-top: 3rem; */
+
 }
 
 /* Footer First end Here  */
