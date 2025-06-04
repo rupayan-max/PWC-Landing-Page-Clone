@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .hero2_title_content {
@@ -60,15 +61,17 @@
   font-weight: 500;
 }
 
-.navlist:hover{
-  color:black;
+.navlist:hover {
+  color: black;
   font-size: 1.2rem;
   font-weight: 500;
-  
+
 }
-.navlist:focus{
-  color:orangered;
+
+.navlist:focus {
+  color: orangered;
 }
+
 .menu_container {
   display: none;
 }
@@ -95,21 +98,23 @@
     display: block;
     background-color: rgb(237, 99, 19);
     width: 50%;
-    height:100%;
+    height: 100%;
     position: fixed;
     top: 0%;
     right: -100%;
     z-index: 1;
 
   }
-  .close_button{
+
+  .close_button {
     font-size: 2.5rem;
-    position:absolute;
-    color:white;
-    left:90%;
-    
-    
+    position: absolute;
+    color: white;
+    left: 90%;
+
+
   }
+
   .menu_icon {
     display: block;
     padding: 2rem;
@@ -156,6 +161,20 @@
   object-fit: cover;
   width: 100%;
   height: 100vh;
+}
+
+@media screen and (max-width:576px) {
+  .hero_container {
+    background-color: rgb(244, 165, 6);
+    background-image: none;
+    height: 75vh;
+  }
+
+  .first_para,
+  .second_para,
+  .third_para {
+    color: white;
+  }
 }
 
 .hero_containt {
@@ -278,6 +297,18 @@
   font-size: 1.2rem;
 }
 
+@media screen and (max-width:576px) {
+  .hero2_title_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+  #long_grid{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
 /* hero2 container end here */
 
 /* Middle comtainer start here */
@@ -333,6 +364,15 @@
   line-height: 2rem;
 }
 
+@media screen  and (max-width:576px){
+  .middle_grid_container{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.8rem;
+  row-gap: 1.8rem;
+  }
+  
+}
 /* Middle comtainer end  here */
 
 /* Last Container Start here  */
@@ -386,6 +426,15 @@
   cursor: pointer;
 }
 
+@media screen and (max-width:576px) {
+  .video_grid_container{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  }
+  
+}
 /* Last Container Start here   */
 
 /* Footer First Start Here  */
@@ -537,12 +586,29 @@
   padding-right: 35%;
 }
 
+@media screen  and  (max-width:576px){
+  .actual_last_text{
+    padding-right: 0%;
+  }
+  
+}
+
 .footerlist {
   list-style: none;
   display: flex;
   gap: 2.5rem;
 }
 
+@media screen and (max-width:576px){
+  .footerlist{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap:1rem;
+    justify-content: space-between;
+  }
+} 
 .anchor_footer_list {
   text-decoration: none;
   color: black;
