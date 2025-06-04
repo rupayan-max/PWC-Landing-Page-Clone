@@ -487,6 +487,13 @@
   /* margin-top: 3rem; */
 
 }
+@media screen and (max-width:576px) {
+  .footer_button{
+    font-size: 0.5rem;
+    padding:0.5rem 1rem;
+  }
+  
+}
 
 /* Footer First end Here  */
 
